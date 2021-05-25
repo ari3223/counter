@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+body{
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-family: Nunito sans-serif;
+}
+
+.video-background{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+}
+
+video{
+    object-fit: cover;
+}
+
+.over-video{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.containar{
+    min-width: 580px;
+    min-height: 300px;
+    border-radius: 9px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(214, 213, 213, 0.92);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.input-containar{
+    width: 100%;
+}
+
+.complete-countdown{
+    width: 100%;
+    
+}
+h1{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+input{
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 3.5px auto;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.form label{
+    margin-left: 16px;
+    font-family: Nunito sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+.btn{
+    width: 43%;
+    height: 55px;
+    border-radius: 30px;
+    margin: 15px auto;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn:hover{
+    filter: brightness(104%);
+}
+.btn:active{
+    transform: scale(.98);
+}
+ul{
+    margin-right: 25px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 8px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+li span{
+    display: block;
+    font-weight: normal;
+    font-size: 60px;
+}
+#finish-countdown{
+    margin: 30px auto;
+}
+#complete-title{
+    animation: finish 5s linear infinite;
+}
+
+@keyframes finish{
+    0% {
+        color: rgb(233, 12, 12);
+      }
+    
+      25% {
+        color: rgb(214, 193, 0);
+      }
+    
+      50% {
+        color: rgb(68, 231, 19);
+        transform: scale(1.4);
+      }
+    
+      75% {
+        color: rgb(19, 79, 209);
+      }
+    
+      100% {
+        color: rgb(188, 16, 211);
+      }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .containar{
+        min-width: unset;
+        width: 400px;
+        min-height: 240px;
+    }
+
+    h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    li{
+        font-size: 20px;
+        margin: 3px;
+        padding: 0;
+        font-weight: lighter;
+    }
+    li span{
+        font-size: 45px;
+    }
+    .btn{
+        width: 59%;
+        font-size: 20px;
+    }
+    
+
+}
