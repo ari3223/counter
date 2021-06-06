@@ -63,7 +63,13 @@ input{
     border: 0;
     outline: 0;
 }
-
+.long{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 .form label{
     margin-left: 16px;
     font-family: Nunito sans-serif;
@@ -89,9 +95,10 @@ input{
 .btn:active{
     transform: scale(.98);
 }
-ul{
-    margin-right: 25px;
+.counter-countdown div{
+    display: inline;
 }
+
 li{
     list-style: none;
     display: inline-block;
@@ -112,7 +119,7 @@ li span{
     margin: 30px auto;
 }
 #complete-title{
-    animation: finish 5s linear infinite;
+    animation: finish 3s linear infinite;
 }
 
 @keyframes finish{
@@ -121,11 +128,11 @@ li span{
       }
     
       25% {
-        color: rgb(214, 193, 0);
+        color: rgb(207, 187, 7);
       }
     
       50% {
-        color: rgb(68, 231, 19);
+        color: rgb(46, 151, 14);
         transform: scale(1.4);
       }
     
@@ -141,28 +148,60 @@ li span{
 
 
 @media screen and (max-width: 600px) {
-    .containar{
+    body{
+        padding: 0 10px;
+    }
+    .containar, .complete-countdown{
         min-width: unset;
-        width: 400px;
-        min-height: 240px;
+        width: 90%;
+        min-height: unset;
+        margin: auto ;
     }
 
     h1{
-        font-size: 28px;
-        margin-bottom: 15px;
+        font-size: 22px;
+        margin-bottom: 10px;
     }
     li{
-        font-size: 20px;
-        margin: 3px;
-        padding: 0;
-        font-weight: lighter;
+        font-size: 16px;
+        margin: 5px;
+        
+        
     }
+    .counter-countdown{
+        width: 100%;
+    }
+    .counter-countdown div{
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+   
     li span{
-        font-size: 45px;
+        font-size: 27px;
+    }
+    .one{
+       margin-left: 20px;
+       margin-right: 10px;
     }
     .btn{
-        width: 59%;
+        width: 60%;
+        height: 45px;
+        font-size: 15px;
+        margin: 10px auto;
+        margin-top: 0;
+    }
+    input{
+        height: 30px;
+    }
+    .form label{
         font-size: 20px;
+    }
+    .form input{
+        margin-bottom: 5px;
     }
     
 

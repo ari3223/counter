@@ -3,19 +3,19 @@ class UI{
     showfirst(){
         first.hidden = false;
         middle.hidden = true;
-        last.hidden = true;
+        last.classList.remove('long');
         localStorage.setItem('page', '1')
     }
     
     showMid(){
         first.hidden = true;
         middle.hidden = false;
-        last.hidden = true;
+        last.classList.remove('long');
         localStorage.setItem('page', '2')
     }
     
     showLast(){
-        last.hidden = false;
+        last.classList.add('long');
         first.hidden = true;
         middle.hidden = true;
         localStorage.setItem('page', '3')

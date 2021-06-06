@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>custom countdown</title>
     <link rel="stylesheet" href="Css.css">
     
@@ -32,12 +33,14 @@
         <!-- counter-countdown -->
         <div class="counter-countdown" hidden>
             <h1 id="title-countdown"></h1>
-            <ul>
-                <li><span id="day"></span>Days</li>
-                <li><span id="hour"></span>Hours</li>
+            <div>
+                <li class="one"><span id="day"></span>Days  </li>
+                <li class="one"><span id="hour"></span>Hours</li>
+            </div>
+            <div>
                 <li><span id="min"></span>Minutse</li>
                 <li><span id="sec"></span>Secends</li>
-            </ul>
+            </div>
             <button id="reset" type="button" class="btn">RESET</button>
         </div>
         <!-- end counter-countdown -->
